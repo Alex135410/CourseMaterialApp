@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LessonDetailActivity">
+
+    <!-- Lesson Title -->
+    <TextView
+        android:id="@+id/lessonTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        tools:text="Android Fundamentals"/>
+
+    <!-- Lesson Content -->
+    <TextView
+        android:id="@+id/lessonContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        tools:text="This lesson covers the basic concepts of Android development..."/>
+
+    <!-- Slides Button -->
+    <Button
+        android:id="@+id/slidesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/view_slides"
+        android:drawableStart="@drawable/ic_slides"
+        android:drawablePadding="8dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"/>
+
+    <!-- Video Button -->
+    <Button
+        android:id="@+id/videoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/watch_video"
+        android:drawableStart="@drawable/ic_video"
+        android:drawablePadding="8dp"/>
+
+    <!-- Lab Button -->
+    <Button
+        android:id="@+id/labButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/view_lab"
+        android:drawableStart="@drawable/ic_lab"
+        android:drawablePadding="8dp"/>
+
+</LinearLayout>
